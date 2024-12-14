@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000|Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', 'Playfair Display', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0f6ce;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    width: 350px;
+    padding: 20px;
+    background-color: rgb(109, 170, 250);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(23, 65, 120, 0.638);
+}
+
+/* Input container styling */
+.input-container {
+    width: 100%;
+    border: 2px solid #6deffe;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff; /* Ensures consistent background color */
+}
+
+/* City input styling */
+.cityInput {
+    flex: 1;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+    background-color: transparent; /* Matches container background */
+}
+
+/* Search icon styling */
+.search-icon {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9ff9ff; /* Matches border color */
+    border-radius: 0 10px 10px 0; /* Matches input-container radius */
+}
+
+.search-icon img {
+    width: 20px; /* Restricts image size */
+    height: 20px;
+    object-fit: contain;
+}
+
+.image{
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.image img{
+    padding: 7px;
+    width: 150px;
+    height: 140px;
+}
+.temp,
+.location,
+.country {
+    margin-top: 5px;
+    font-size: 35px;
+    color: #062d54;
+    text-transform: uppercase;
+    text-align: center;
+}
+.temp{
+    font-weight: 500;
+}
+.location{
+    color: #ffde06;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.country{
+    font-size: 18px;
+    color: #180d60;
+    font-weight: 500;
+}
+.cord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.cord div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.cord div span{
+    font-size: 14px;
+}
+
+.humidity-percent,
+.wind-percent,
+.cord div span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c3642;
+    padding-top: 5px;
+}
+
+.data-container{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.element{
+    text-align: center;
+}
+.icon{
+   height: 50px;
+   width: 50px; 
+}
+.text{
+    font-size: 12px;
+    color: #202122;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+}
+.copyright span{
+    color: #f2f76c;
+}
+
+.city-not-found,
+.loading-message,
+.error-message{
+    margin-top: 10px;
+    color:#efeb77;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
